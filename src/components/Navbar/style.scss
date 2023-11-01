@@ -1,0 +1,187 @@
+:root {
+  // --color-1: #186cb8;
+  // --color-2: #2a9a9f;
+  // --color-3: #f1b211;
+  // --color-4: #e83611;
+  // --color-5: #f9002f;
+
+  --color-1: #186cb8;
+  --color-2: #2a75ba;
+  --color-3: #4c81b2;
+  --color-4: #99bfe2;
+  --color-5: #a3cdf5;
+}
+
+.text__container {
+  h1 {
+    font-family: "Exo", sans-serif;
+    font-size: 24px !important;
+    font-weight: 900;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(
+      219deg,
+      var(--color-1) 19%,
+      transparent 19%,
+      transparent 20%,
+      var(--color-2) 20%,
+      var(--color-2) 39%,
+      transparent 39%,
+      transparent 40%,
+      var(--color-3) 40%,
+      var(--color-3) 59%,
+      transparent 59%,
+      transparent 60%,
+      var(--color-4) 60%,
+      var(--color-4) 79%,
+      transparent 79%,
+      transparent 80%,
+      var(--color-5) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .text {
+    text-align: center;
+    background: radial-gradient(
+        circle at 1.4% 1.4%,
+        var(--color-1) 0.8%,
+        transparent 0.8%
+      ),
+      radial-gradient(
+        circle at 5.5% 3%,
+        var(--color-2) 0.45%,
+        transparent 0.45%
+      ),
+      radial-gradient(
+        circle at 2.5% 3.5%,
+        var(--color-3) 0.5%,
+        transparent 0.5%
+      ),
+      radial-gradient(
+        circle at 4.5% 1.2%,
+        var(--color-4) 0.25%,
+        transparent 0.25%
+      ),
+      radial-gradient(circle at 98% 98%, var(--color-1) 0.8%, transparent 0.8%),
+      radial-gradient(
+        circle at 95% 95%,
+        var(--color-2) 0.45%,
+        transparent 0.45%
+      ),
+      radial-gradient(
+        circle at 94.5% 97.5%,
+        var(--color-3) 0.5%,
+        transparent 0.5%
+      ),
+      radial-gradient(
+        circle at 98.5% 95.5%,
+        var(--color-4) 0.25%,
+        transparent 0.25%
+      );
+  }
+}
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:hover {
+  color: #3471ff !important;
+}
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:acitve {
+  color: #3471ff !important;
+}
+.ant-menu-submenu.ant-menu-submenu-inline.ant-menu-submenu-open.ant-menu-submenu-selected {
+  .ant-menu-submenu-title {
+    color: #3471ff !important;
+  }
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  /* background: #000c17; */
+  background: #01152a;
+}
+
+.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
+  width: 240px;
+}
+.sidebar__container {
+  .ant-menu-item.ant-menu-item-active {
+    color: #3471ff;
+    border-radius: 0px 21px 21px 0px;
+  }
+
+  .ant-menu-title-content {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px !important;
+  }
+  .ant-menu-item-selected {
+    // color: black;
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    // color: rgb(130, 49, 211);
+    color: #3471ff;
+    border-radius: 0px 21px 21px 0px;
+  }
+
+  .ant-menu-submenu-selected {
+    // color: black;
+  }
+  .ant-menu-submenu-arrow {
+    color: #868eae !important;
+  }
+  .ant-menu-inline {
+    border: none !important;
+  }
+  .ant-mennu-submenu-active {
+    // color: rgb(130, 49, 211) !important;
+    color: #3471ff !important;
+  }
+
+  .anticon.anticon-right.ant-menu-submenu-expand-icon {
+    color: #868eae !important;
+    font-size: 8px;
+  }
+  .sidebar__container-content {
+    background: #00162a;
+    max-height: calc(100vh - 100px);
+  }
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal).ant-menu-item-selected {
+    background-color: none !important;
+  }
+  .ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark.sidebar-menu-dark {
+    .ant-menu-item.ant-menu-item-selected {
+      padding: 5px;
+    }
+  }
+  .ant-menu-item.ant-menu-item-selected {
+  }
+  .ant-menu-inline-collapsed {
+  }
+  &-content {
+    // height: calc(100vh - 30px) !important;
+    height: 100%;
+
+    //   display: flex;
+    //   flex-direction: column;
+    //   padding: 12px;
+    //   padding-left: 0px;
+    //   padding-right: 0px;
+    .content-collaspe {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 18px;
+    }
+    .sidebar-menu-dark {
+    }
+  }
+}
