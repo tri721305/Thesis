@@ -51,10 +51,8 @@ export async function getStoreInfo(data) {
       if (errorUser?.response?.status == 400) {
         toast.error(errorUser.response.data.errorReason);
       } else if (errorUser.response.status == 404) {
-        console.log("lỗi 404");
         toast.error(errorUser.message);
       } else {
-        toast.error("Internal server error");
       }
       return Promise.reject(errorUser);
     });
