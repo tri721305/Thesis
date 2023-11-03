@@ -2,7 +2,8 @@ import { createBrowserRouter, Route, Link } from "react-router-dom";
 
 import React from "react";
 
-import { Login } from "@/page";
+// import { Login } from "@/page";
+import Home_V1 from "../components/home-v1";
 import PrivateRoutes from "./PrivateRoutes";
 const router = createBrowserRouter([
      {
@@ -11,14 +12,9 @@ const router = createBrowserRouter([
           children: [
                {
                     path: "/login",
-                    element: <Login />,
-                    // loader: ({ request }) =>
-                    //      fetch("https://633045f9591935f3c88cf3d5.mockapi.io/users", {
-                    //           signal: request.signal,
-                    //      }),
+                    element: <Home_V1 />,
                     children: [{}],
                },
-           
           ],
      },
 ]);
