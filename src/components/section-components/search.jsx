@@ -11,13 +11,19 @@ class Searach extends Component {
                               <div className="row">
                                    <div className="col-lg-3 col-md-4">
                                         <div className="tp-search-single-wrap">
-                                             <input className="w-100" type="text" placeholder="Bách Khoa Sài Gòn" />
+                                             <input className="w-100" type="text" placeholder="Search address" />
                                              <i className="ti-location-pin" />
                                         </div>
                                    </div>
                                    <div className="col-lg-2 col-md-4">
                                         <div className="tp-search-single-wrap">
-                                             <input className="w-100" type="text" placeholder="Where From?" />
+                                             <input className="w-100" type="text" placeholder="Begin at" />
+                                             <i className="fa fa-dot-circle-o" />
+                                        </div>
+                                   </div>
+                                   <div className="col-lg-2 col-md-4">
+                                        <div className="tp-search-single-wrap">
+                                             <input className="w-100" type="text" placeholder="Begin at" />
                                              <i className="fa fa-dot-circle-o" />
                                         </div>
                                    </div>

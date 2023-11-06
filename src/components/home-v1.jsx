@@ -20,14 +20,14 @@ const Home_V1 = () => {
                <Banner />
                <Searach />
                <Intro />
-               {/* <Offer />
+               <Offer />
                <Video />
                <HolidayPlan />
                <Review />
                <BlogSection />
                <Ads />
                <Subscribe />
-               <Footer /> */}
+               <Footer />
           </div>
      );
 };
