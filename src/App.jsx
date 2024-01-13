@@ -16,8 +16,10 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home_V1 from "./components/home-v1";
+import TestUpload from "./components/TestUpload";
 import { CTRL_BASEURL } from "./constant/constant";
 import { MenuFoldOutlined } from "@ant-design/icons";
+import Map from "./page/Map/Map";
 const App = () => {
      const navigate = useNavigate();
      const location = useLocation();
@@ -54,7 +56,7 @@ const App = () => {
                     </div>
                )}
                <div className="flex flex-col flex-1">
-                    {location.pathname != "/login" && location.pathname?.split("/")[1] != "nvc" && (
+                    {/* {location.pathname != "/login" && location.pathname?.split("/")[1] != "nvc" && (
                          <div className="flex items-center bg-[#00162a]">
                               <div className="text__container ml-6 gap-2 flex items-center ">
                                    <div className="text">
@@ -81,9 +83,9 @@ const App = () => {
                               </div>
                               <Sidebar id={window.location.href.split("/").length > 3 ? window.location.href.split("/")[4] : null} />
                          </div>
-                    )}
+                    )} */}
                     <div className="">
-                         {location.pathname != "/login" && location.pathname?.split("/")[1] != "nvc" && (
+                         {/* {location.pathname != "/login" && location.pathname?.split("/")[1] != "nvc" && (
                               <Navbar
                                    isActive={!collase}
                                    ref={ref}
@@ -106,7 +108,7 @@ const App = () => {
                                                }
                                    }
                               />
-                         )}
+                         )} */}
 
                          <div className="flex-1">
                               {/* <div> {location.pathname != "/login" && location.pathname.includes("dashboard/") && <Sidebar />}</div>
@@ -115,6 +117,8 @@ const App = () => {
                                    <Route path="/" element={<PrivateRoutes isLogin={isLogin} token={token}></PrivateRoutes>}></Route>
                                    <Route exact path="*" element={<Home_V1 />}></Route>
                                    <Route element={<Home_V1 />} path="/login" />
+                                   <Route element={<TestUpload />} path="/upload" />
+                                   <Route element={<Map />} path="/map" />
                               </Routes>
                          </div>
                     </div>
